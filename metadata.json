@@ -1,0 +1,5 @@
+{
+  "name": "Valentine's Video Frame",
+  "description": "A beautiful, client-side Valentine's Day video frame creator. Upload a video, add a message, and display it in a romantic setting.",
+  "requestFramePermissions": []
+}
