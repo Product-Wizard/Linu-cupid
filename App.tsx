@@ -8,7 +8,7 @@ import { Heart, PlayCircle, Sparkles } from 'lucide-react';
 // Replace the URL below with your direct video link (MP4/WebM)
 const VIDEO_URL = "https://findmeaninternship.com/jargons/LinuRajVal.mp4";
 const RECIPIENT_NAME = "Linu Rajwani";
-const MESSAGE = "I couldn't afford to buy anything that could touch your heart, so from the depths of my thoughts, I put my hands to work. I hope this affects joy and a tear or two on you.";
+const MESSAGE = "I couldn't afford to buy anything that could touch your heart, so from the depths of my thoughts, I put my hands to work. I hope this affects joy and a tear or two in you.";
 // ---------------------
 
 const App: React.FC = () => {
