@@ -67,7 +67,7 @@ const ValentineDisplay: React.FC<ValentineDisplayProps> = ({ videoUrl, recipient
 
   return (
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto animate-fade-in py-8">
-      
+
       {/* Header / Title */}
       <div className="text-center mb-6 z-10 relative">
         <h1 className="font-script text-5xl md:text-7xl text-valentine-600 drop-shadow-sm mb-2 px-4">
@@ -82,7 +82,7 @@ const ValentineDisplay: React.FC<ValentineDisplayProps> = ({ videoUrl, recipient
 
       {/* Frame Container */}
       <div className="relative w-full max-w-4xl px-4 md:px-8">
-        
+
         {/* Decorative Elements */}
         <div className="absolute -top-6 -left-2 text-6xl rotate-[-15deg] z-20 drop-shadow-lg animate-pulse-slow">🎀</div>
         <div className="absolute -bottom-6 -right-2 text-6xl rotate-[15deg] z-20 drop-shadow-lg animate-pulse-slow">🌹</div>
@@ -90,7 +90,7 @@ const ValentineDisplay: React.FC<ValentineDisplayProps> = ({ videoUrl, recipient
         <div className="absolute top-1/3 -right-8 md:-right-12 text-4xl animate-bounce delay-150 z-20">💝</div>
 
         {/* The Frame */}
-        <div 
+        <div
           className="relative bg-white/40 backdrop-blur-xl rounded-[2rem] p-4 md:p-6 shadow-2xl border-4 border-white/60 overflow-hidden"
           onMouseMove={handleMouseMove}
           onClick={handleMouseMove}
@@ -106,13 +106,13 @@ const ValentineDisplay: React.FC<ValentineDisplayProps> = ({ videoUrl, recipient
               onTimeUpdate={handleTimeUpdate}
               onClick={togglePlay}
             />
-            
+
             {/* Custom Overlay Controls */}
-            <div 
+            <div
               className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 transition-opacity duration-300 flex flex-col justify-end p-6 ${showControls ? 'opacity-100' : 'opacity-0'}`}
             >
               <div className="flex items-center gap-4 text-white">
-                <button 
+                <button
                   onClick={togglePlay}
                   className="p-3 rounded-full bg-valentine-600/90 hover:bg-valentine-500 hover:scale-110 transition-all shadow-lg"
                 >
@@ -124,8 +124,8 @@ const ValentineDisplay: React.FC<ValentineDisplayProps> = ({ videoUrl, recipient
                 </button>
 
                 <div className="flex-1 h-1.5 bg-white/30 rounded-full overflow-hidden mx-2 cursor-pointer">
-                  <div 
-                    className="h-full bg-valentine-500 rounded-full" 
+                  <div
+                    className="h-full bg-valentine-500 rounded-full"
                     style={{ width: `${progress}%` }}
                   />
                 </div>
@@ -140,14 +140,14 @@ const ValentineDisplay: React.FC<ValentineDisplayProps> = ({ videoUrl, recipient
           {/* Message Area */}
           {message && (
             <div className="mt-6 text-center px-4 md:px-12 pb-2">
-              <p className="font-script text-3xl md:text-4xl text-valentine-700 leading-relaxed">
+              <p className="font-sans text-xl md:text-2xl text-valentine-700 leading-relaxed italic font-medium">
                 "{message}"
               </p>
             </div>
           )}
         </div>
       </div>
-      
+
       {/* Back/Reset button removed for this version as it is a single personalized view */}
     </div>
   );
